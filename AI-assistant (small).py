@@ -88,7 +88,7 @@ def start_math():
 #a function to call and use the stt function
 def start_stt():
     #set path to language model
-    model = vosk.Model("vosk-model-en-us-0.42-gigaspeech")
+    model = vosk.Model("vosk-model-small-en-us-0.15")
     #set recorder and standard samplerate for audio files
     rec = vosk.KaldiRecognizer(model,16000)
     #set up mic
