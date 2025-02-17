@@ -113,7 +113,7 @@ def start_stt():
                     frames_per_buffer = 8192)
     #set output path
     output_file_path = "speak.txt"
-    with open(output_file_path, "w") as output_file:
+    with open(speak.txt, "w") as output_file:
         text = "Listening"
         engine.say(text)
         engine.runAndWait()
