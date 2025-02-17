@@ -26,7 +26,7 @@ def start_general():
         engine.runAndWait()
         #start audio stream
         while True:
-            data = stream.read()
+            data = stream.read(1000)
             if rec.AcceptWaveform(data):
                 result = json.loads(rec.Result())
                 prompt = result['text']
@@ -71,7 +71,7 @@ def start_math():
         engine.runAndWait()
         #start audio stream
         while True:
-            data = stream.read()
+            data = stream.read(1000)
             if rec.AcceptWaveform(data):
                 result = json.loads(rec.Result())
                 prompt = result['text']
@@ -119,7 +119,7 @@ def start_stt():
         print (text + "...")
         #start audio stream
         while True:
-            data = stream.read()
+            data = stream.read(1000)
             if rec.AcceptWaveform(data):
                 result = json.loads(rec.Result())
                 speak = result['text']
