@@ -3,10 +3,18 @@ This project aims to use voice assistance and AI for general use within a device
 
 Installation:
 
+(you already need ollama installed, models optional)
+
 git clone https://github.com/btwitsmyname/Voice-Assistant
 
 cd Voice-Assistant
 
 python3 -m pip install -r requirements.txt 
 
-sudo dnf install python-pyaudio
+sudo apt install python-pyaudio --break-system-packages
+
+unzip speach models (small or large)
+
+unzip Large-eng.zip
+
+unzip Small-eng.zip
